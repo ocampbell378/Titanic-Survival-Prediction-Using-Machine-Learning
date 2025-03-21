@@ -1,6 +1,7 @@
 import pandas as pd
 
-def load_data(train_path="train.csv", test_path="test.csv"):
+
+def load_data(train_path="data/train.csv", test_path="data/test.csv"):
     """Load the Titanic dataset from CSV files."""
 
     train_df = pd.read_csv(train_path)
@@ -8,9 +9,10 @@ def load_data(train_path="train.csv", test_path="test.csv"):
 
     return train_df, test_df
 
+
 def inspect_data(df, name="Dataset"):
     """Prints basic information about the dataset."""
-    print(f"Inspecting {name}...\n")
+    print(f"\n Inspecting {name}...\n")
 
     print("🔹 First 5 rows:\n")
     print(df.head().to_string())
@@ -25,6 +27,8 @@ def inspect_data(df, name="Dataset"):
     print(df.isnull().sum().to_string())
     print("\n")
 
+
+#Script testing
 if __name__ == "__main__":
     train, test = load_data()
     inspect_data(train, "Train Data")

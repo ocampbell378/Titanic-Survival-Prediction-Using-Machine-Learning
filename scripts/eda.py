@@ -97,8 +97,8 @@ def plot_categorical_survival(df):
 
     plt.figure(figsize=(6, 4))
     sns.countplot(x="Sex", hue="Survived", data=df)
-    plt.title("Survival Count by Gender")
-    plt.xlabel("Gender")
+    plt.title("Survival Count by Sex")
+    plt.xlabel("Sex")
     plt.ylabel("Count")
     plt.show()
 

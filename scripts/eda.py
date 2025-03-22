@@ -105,6 +105,7 @@ def plot_categorical_survival(df):
 
 def plot_survival_by_age(df):
     """Plots a heatmap of survival rates across binned age groups."""
+    
     df = df.copy()
     df["AgeBin"] = pd.cut(df["Age"], bins=[0, 10, 20, 30, 40, 50, 60, 70, 80])
 

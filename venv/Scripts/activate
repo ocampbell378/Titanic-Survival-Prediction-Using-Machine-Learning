@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\oscam\Desktop\Titantic-Kaggle-Submission\venv"
+VIRTUAL_ENV="C:\Users\oscam\Desktop\Titanic-Survival-Prediction-Using-Machine-Learning\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
